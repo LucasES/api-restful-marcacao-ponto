@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/LucasES/api-restful-marcacao-ponto.svg?branch=master)](https://travis-ci.org/LucasES/api-restful-marcacao-ponto)
+
 # api-restful-marcacao-ponto
 API RESTful para marcação de ponto utilizando Spring Boot e Java 8.
 
