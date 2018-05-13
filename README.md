@@ -1,7 +1,7 @@
 # api-restful-marcacao-ponto
 API RESTful para marcação de ponto utilizando Spring Boot e Java 8.
 
-**Este projeto tem como foco as seguintes tecnologias:**
+**Este projeto tem como objetivo praticar as seguintes tecnologias:**
 - Criar autenticação com tokens JWT (JSON Web Token) com o Spring Security
 - Persistir dados no MySQL com JPA e Spring Data
 - Fazer deploy na nuvem com Heroku
