@@ -4,23 +4,21 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
+/**
+ * Entidade responsável em mapear os dados da tabela de empresa.
+ *
+ * @author Lucas Araújo
+ * @version 1.0
+ */
 @Entity
 @Table(name = "empresa")
 public class Empresa implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -3492804860467946416L;
 
-	private Long id;
+    private Long id;
 	private String razaoSocial;
 	private String cnpj;
 	private Date dataCriacao;
@@ -84,5 +82,28 @@ public class Empresa implements Serializable{
 	public void setFuncionarios(List<Funcionario> funcionarios) {
 		this.funcionarios = funcionarios;
 	}
-	
+
+	@PreUpdate
+    public void preUpdate() {
+	    dataAtualizacao = new Date();
+    }
+
+    @PrePersist
+    public void prePersist() {
+        final Date hoje = new Date();
+        dataCriacao = hoje;
+        dataAtualizacao = hoje;
+    }
+
+    @Override
+    public String toString() {
+        return "Empresa{" +
+                "id=" + id +
+                ", razaoSocial='" + razaoSocial + '\'' +
+                ", cnpj='" + cnpj + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                ", dataAtualizacao=" + dataAtualizacao +
+                ", funcionarios=" + funcionarios +
+                '}';
+    }
 }
