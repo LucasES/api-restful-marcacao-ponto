@@ -13,6 +13,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import br.com.touchapps.pontoeletronico.api.entities.Lancamento;
 
+/**
+ * Interface responsável em realizar consultas e acessos no banco de dados na tabela de lancamento.
+ *
+ * @author Lucas Araújo
+ * @version 1.0
+ */
 @Transactional(readOnly = true)
 @NamedQueries({
 		@NamedQuery(name = "LancamentoRepository.findByFuncionarioId", 

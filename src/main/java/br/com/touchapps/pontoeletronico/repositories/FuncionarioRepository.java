@@ -5,6 +5,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import br.com.touchapps.pontoeletronico.api.entities.Funcionario;
 
+/**
+ * Interface responsável em realizar consultas e acessos no banco de dados na tabela de funcionario.
+ *
+ * @author Lucas Araújo
+ * @version 1.0
+ */
 @Transactional(readOnly = true)
 public interface FuncionarioRepository extends JpaRepository<Funcionario, Long> {
 
