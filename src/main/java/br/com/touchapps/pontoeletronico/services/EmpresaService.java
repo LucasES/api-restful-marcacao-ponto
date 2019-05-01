@@ -22,7 +22,6 @@ public interface EmpresaService {
      */
     Optional<Empresa> buscarPorCNPJ(String cnpj);
 
-
     /**
      * Este método tem como objetivo persistir uma empresa.
      *
@@ -30,5 +29,5 @@ public interface EmpresaService {
      *
      * @return Empresa persistida.
      */
-    Empresa save(Empresa empresa);
+    Empresa salvar(Empresa empresa);
 }

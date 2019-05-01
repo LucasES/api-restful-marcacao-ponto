@@ -3,13 +3,10 @@ package br.com.touchapps.pontoeletronico.service;
 import br.com.touchapps.pontoeletronico.entities.Empresa;
 import br.com.touchapps.pontoeletronico.repositories.EmpresaRepository;
 import br.com.touchapps.pontoeletronico.services.EmpresaService;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 import org.mockito.BDDMockito;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -51,7 +48,7 @@ public class EmpresaServiceTest {
 
     @Test
     public void testPersistirEmpresa() {
-        Empresa empresaPersistida = this.empresaService.save(new Empresa());
+        Empresa empresaPersistida = this.empresaService.salvar(new Empresa());
 
         assertNotNull(empresaPersistida);
     }

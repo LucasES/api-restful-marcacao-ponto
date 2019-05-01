@@ -32,7 +32,7 @@ public class EmpresaServiceImpl implements EmpresaService {
     }
 
     @Override
-    public Empresa save(Empresa empresa) {
+    public Empresa salvar(Empresa empresa) {
         logger.info("Persistindo empresa: " + empresa);
 
         return this.empresaRepository.save(empresa);
