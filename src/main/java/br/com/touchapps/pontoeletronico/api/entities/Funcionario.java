@@ -24,12 +24,18 @@ import javax.persistence.Transient;
 
 import br.com.touchapps.pontoeletronico.api.enums.PerfilEnum;
 
+/**
+ * Entidade responsável em mapear os dados da tabela de funcionario.
+ *
+ * @author Lucas Araújo
+ * @version 1.0
+ */
 @Entity
 @Table(name = "funcionario")
 public class Funcionario implements Serializable{
 
-	private static final long serialVersionUID = 1L;
-	
+	private static final long serialVersionUID = -7938507824846637168L;
+
 	private Long id;
 	private String nome;
 	private String email;

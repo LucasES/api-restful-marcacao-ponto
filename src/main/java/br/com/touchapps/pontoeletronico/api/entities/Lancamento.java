@@ -20,11 +20,17 @@ import javax.persistence.TemporalType;
 
 import br.com.touchapps.pontoeletronico.api.enums.TipoEnum;
 
+/**
+ * Entidade responsável em mapear os dados da tabela de lancamento.
+ *
+ * @author Lucas Araújo
+ * @version 1.0
+ */
 @Entity
 @Table(name = "lancamento")
 public class Lancamento implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 4146220229229757746L;
 
 	private Long id;
 	private Date data;

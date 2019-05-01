@@ -1,5 +1,10 @@
 package br.com.touchapps.pontoeletronico.api.enums;
 
+/**
+ * ENUM contendo o tipo de marcação de hora de um funcionário.
+ *
+ * @author Lucas Araújo
+ */
 public enum TipoEnum {
 	INICIO_TRABALHO,
 	TERMINO_TRABALHO,
