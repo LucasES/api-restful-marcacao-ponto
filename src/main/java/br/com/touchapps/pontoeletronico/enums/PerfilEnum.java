@@ -1,4 +1,4 @@
-package br.com.touchapps.pontoeletronico.api.enums;
+package br.com.touchapps.pontoeletronico.enums;
 
 /**
  * ENUM responsável em centralizar os tipos de perfil do sistema.

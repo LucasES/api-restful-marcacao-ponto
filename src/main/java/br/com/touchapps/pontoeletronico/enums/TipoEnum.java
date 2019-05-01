@@ -1,4 +1,4 @@
-package br.com.touchapps.pontoeletronico.api.enums;
+package br.com.touchapps.pontoeletronico.enums;
 
 /**
  * ENUM contendo o tipo de marcação de hora de um funcionário.

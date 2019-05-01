@@ -1,4 +1,4 @@
-package br.com.touchapps.pontoeletronico.api.entities;
+package br.com.touchapps.pontoeletronico.entities;
 
 import java.io.Serializable;
 import java.util.Date;

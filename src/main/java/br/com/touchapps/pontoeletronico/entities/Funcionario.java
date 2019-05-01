@@ -1,4 +1,4 @@
-package br.com.touchapps.pontoeletronico.api.entities;
+package br.com.touchapps.pontoeletronico.entities;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -22,7 +22,7 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import br.com.touchapps.pontoeletronico.api.enums.PerfilEnum;
+import br.com.touchapps.pontoeletronico.enums.PerfilEnum;
 
 /**
  * Entidade responsável em mapear os dados da tabela de funcionario.

@@ -1,4 +1,4 @@
-package br.com.touchapps.pontoeletronico.api.entities;
+package br.com.touchapps.pontoeletronico.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -18,7 +18,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import br.com.touchapps.pontoeletronico.api.enums.TipoEnum;
+import br.com.touchapps.pontoeletronico.enums.TipoEnum;
 
 /**
  * Entidade responsável em mapear os dados da tabela de lancamento.
