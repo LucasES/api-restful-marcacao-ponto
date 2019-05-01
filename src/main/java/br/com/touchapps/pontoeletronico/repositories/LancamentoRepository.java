@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.touchapps.pontoeletronico.api.entities.Lancamento;
+import br.com.touchapps.pontoeletronico.entities.Lancamento;
 
 /**
  * Interface responsável em realizar consultas e acessos no banco de dados na tabela de lancamento.

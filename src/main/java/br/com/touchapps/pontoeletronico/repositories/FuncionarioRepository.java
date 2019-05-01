@@ -3,7 +3,7 @@ package br.com.touchapps.pontoeletronico.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.touchapps.pontoeletronico.api.entities.Funcionario;
+import br.com.touchapps.pontoeletronico.entities.Funcionario;
 
 /**
  * Interface responsável em realizar consultas e acessos no banco de dados na tabela de funcionario.
