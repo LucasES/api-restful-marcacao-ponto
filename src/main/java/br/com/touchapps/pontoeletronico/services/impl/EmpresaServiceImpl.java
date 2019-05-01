@@ -3,7 +3,6 @@ package br.com.touchapps.pontoeletronico.services.impl;
 import br.com.touchapps.pontoeletronico.entities.Empresa;
 import br.com.touchapps.pontoeletronico.repositories.EmpresaRepository;
 import br.com.touchapps.pontoeletronico.services.EmpresaService;
-import br.com.touchapps.pontoeletronico.utils.Util;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,8 +26,9 @@ public class EmpresaServiceImpl implements EmpresaService {
     @Override
     public Optional<Empresa> buscarPorCNPJ(String cnpj) {
         logger.info("Buscando empresa por CNPJ com valor: " + cnpj);
+        Empresa byCnpj = this.empresaRepository.findByCnpj(cnpj);
 
-        return Optional.ofNullable(this.empresaRepository.findByCnpj(cnpj));
+        return Optional.ofNullable(byCnpj);
     }
 
     @Override

@@ -1,10 +1,9 @@
 package br.com.touchapps.pontoeletronico.entities;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-
-import javax.persistence.*;
 
 /**
  * Entidade responsável em mapear os dados da tabela de empresa.
@@ -103,7 +102,6 @@ public class Empresa implements Serializable{
                 ", cnpj='" + cnpj + '\'' +
                 ", dataCriacao=" + dataCriacao +
                 ", dataAtualizacao=" + dataAtualizacao +
-                ", funcionarios=" + funcionarios +
                 '}';
     }
 }

@@ -3,6 +3,13 @@ package br.com.touchapps.pontoeletronico.response;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe responsável em centralizar os dados de resposta da camada de controller.
+ *
+ * @param <T>
+ * @author Lucas Araújo
+ * @version 1.0
+ */
 public class Response<T> {
 
     private T data;
