@@ -6,6 +6,12 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import java.util.Optional;
 
+/**
+ * Classe responsável em centralizar os dados para transferencia de Funcionario.
+ *
+ * @author Lucas Araújo
+ * @version 1.0
+ */
 public class FuncionarioDto {
 
     private Long id;
